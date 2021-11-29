@@ -549,7 +549,7 @@ struct LayoutProperties {
     }
 }
 
-struct LayoutAttributes {
+public struct LayoutAttributes {
     let startColumn: Int
     let startRow: Int
     let numberOfColumns: Int
@@ -559,14 +559,14 @@ struct LayoutAttributes {
     let insets: CGPoint
 }
 
-enum RectEdge {
+public enum RectEdge {
     case top(left: CGFloat, right: CGFloat)
     case bottom(left: CGFloat, right: CGFloat)
     case left(top: CGFloat, bottom: CGFloat)
     case right(top: CGFloat, bottom: CGFloat)
 }
 
-struct GridLayout {
+public struct GridLayout {
     let gridWidth: CGFloat
     let gridColor: UIColor
     let origin: CGPoint
